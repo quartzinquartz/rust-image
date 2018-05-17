@@ -24,8 +24,10 @@ RUN set -eux; \
     rustc --version; \
     echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' >> /etc/apt/sources.list.d/fish.list; \
     wget -qO - http://download.opensuse.org/repositories/shells:fish:release:2/Debian_8.0/Release.key | apt-key add -; \
-    apt update; \
-    apt install -y fish libgit2-dev cmake vim; \
+    apt clean; apt update; \
+    apt install -y locales fish libgit2-dev cmake vim; \
+    sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen; \
+    dpkg-reconfigure -f noninteractive locales; \
     mkdir -p ~/.vim/autoload ~/.vim/bundle; \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim; \
     echo "execute pathogen#infect()" > ~/.vimrc; \
