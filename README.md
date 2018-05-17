@@ -1,3 +1,5 @@
+[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)](quartzinquartz/rust-image)
+
 # rust-image :confetti_ball:
 
 A rust development environment with fish, vim, and exa (as a "replacement" for ls).
