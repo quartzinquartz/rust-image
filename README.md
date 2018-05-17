@@ -1,6 +1,7 @@
-# rust-image :confetti:
+# rust-image :confetti_ball:
 
 A rust development environment with fish, vim, and exa (as a "replacement" for ls).
+
 
 # A sample run command, mounting local code dir as the working dir of the container:
 
