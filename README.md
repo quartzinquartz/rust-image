@@ -2,7 +2,7 @@
 
 https://hub.docker.com/r/doqr/rust/
 
-# rust-image :confetti_ball:
+# rust-image
 
 A rust development environment with fish, vim, and exa (as a "replacement" for ls).
 
@@ -20,6 +20,6 @@ doqr/rust:latest
 
 # Enter the container:
 ```
-docker exec -it rustainer /usr/bin/fish
+docker exec -it rust /usr/bin/fish
 ```
 
